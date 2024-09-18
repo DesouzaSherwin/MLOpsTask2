@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
     - name: Build and tag Docker image
-      run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/TrainedModelImageOne:latest .
+      run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/trained-model-image-one:latest .
 
     - name: Push Docker image to Docker Hub
-      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/TrainedModelImageOne:latest
+      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/trained-model-image-one:latest
